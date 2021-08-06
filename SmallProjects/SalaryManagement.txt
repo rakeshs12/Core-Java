@@ -1,0 +1,96 @@
+class Ofc{
+         
+     String empName;
+    
+          float nh,perHr;
+    
+          int n;
+      
+           float Salaryd;
+
+
+
+   
+           Ofc( String name1, String name2)
+      
+        {
+    
+                n=2;
+
+                    nh=7;
+    
+                perHr=200;
+    
+         System.out.println("number of employees is "+n);
+   
+   
+                    System.out.println("Name of Employee "+name1);
+    
+                System.out.println("Name of Employee "+name2);
+   
+                 
+        
+            
+              }
+    
+          
+              protected  
+                       int Calculate()
+         
+              {
+       
+                   
+     Salaryd=nh*perHr;
+     
+                        return 0;
+        
+    }
+     
+       protected 
+                       int paySlip()
+     
+                  {
+     
+                        int holiday=4;
+ 
+                            float Msalary;
+    
+                         Msalary=26*Salaryd;
+     
+                        for(int i=0;i<2;i++)
+    
+                         System.out.println("Salary for employee "+i+" is "+Msalary);
+  
+                           return 0;
+    
+                      
+   }
+
+};
+
+
+
+
+              public class Main{
+        
+            public static void main(String args[]){
+ 
+                         Ofc O=new Ofc("XYX","ABC");
+    
+                      O.Calculate();
+  
+                        O.paySlip();
+    
+                }
+     
+         }
+
+
+/*  Output
+$javac Main.java
+$java -Xmx128M -Xms16M Main
+number of employees is 2
+Name of Employee XYX
+Name of Employee ABC
+Salary for employee 0 is 36400.0
+Salary for employee 1 is 36400.0      */
