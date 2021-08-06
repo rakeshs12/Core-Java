@@ -1,2 +1,2 @@
 # Core-Java
-A repository of examples of Core JAVA topics
+Examples of Core JAVA topics
