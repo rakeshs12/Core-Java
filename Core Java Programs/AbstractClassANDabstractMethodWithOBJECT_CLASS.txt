@@ -1,0 +1,84 @@
+abstract class Thief
+{
+
+    
+    int a;
+
+    int b;
+  
+  
+    Thief(){
+      
+  
+        System.out.println("I stole diamonds.");
+  
+  }
+   
+ 
+    abstract void police();
+
+}
+
+
+class PoliceVan extends Thief
+{
+
+    
+    int c;
+
+    PoliceVan(){
+    
+    System.out.println("Police is following you");
+  
+  }
+    
+
+    void police(){
+   
+     System.out.println("Hands up");
+   
+ }
+
+}
+
+
+
+class Object{
+
+    int k;
+ 
+   Object(){
+   
+     System.out.println("Object class");
+  
+      
+        
+    }
+
+}
+
+
+
+public class MAIN{
+  
+  public static void main(String args[])
+{
+
+        PoliceVan S=new PoliceVan();
+   
+      S.police();
+    
+    
+    }
+
+}
+
+/*output
+
+$javac MAIN.java
+$java -Xmx128M -Xms16M MAIN
+I stole diamonds.
+Police is following you
+Hands up
+Object class
+*/

@@ -1,0 +1,39 @@
+ public class MAIN
+{
+  
+  public static void main(String []args)
+    {
+
+        Calc obj;
+
+    }
+
+}
+
+
+
+
+ class Calc
+
+{
+   
+   int k=4;
+  
+   int j=6;
+ 
+   int c;
+
+    
+
+Calc()
+
+{
+  
+      System.out.println(c=k+j);
+
+}
+
+};
+
+/*
+This program generates no output but gives no errors because constructers are automatically called before the new keyword is written. So it dont shows output but also dont shows errors.*/

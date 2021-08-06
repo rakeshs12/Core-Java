@@ -1,0 +1,83 @@
+
+//method overloading
+class Sample
+{
+
+    void test()
+ 
+   {
+    
+    System.out.println("HI first function");
+   
+   }
+   
+ void test(int a, int b)
+   
+   {
+    
+    System.out.println("Hi this is second function with integer values"+a+b);
+
+    }
+  
+  void test(String a)
+ 
+   {
+  
+      System.out.println(a);
+ 
+   }
+  
+  void test(float v)
+   
+ {
+    
+    System.out.println(v);
+
+    }
+  
+  
+}
+
+
+
+public class MAIN
+
+{
+
+    public static void main(String args[])
+
+    {
+    
+    Sample obj=new Sample();
+   
+    obj.test();
+   
+    obj.test(3,4);
+     
+    obj.test("abc");
+    
+    obj.test(0.9f);
+  
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*output
+HI first function
+Hi this is second function with integer values34
+abc
+0.9
+
+*/
+
+

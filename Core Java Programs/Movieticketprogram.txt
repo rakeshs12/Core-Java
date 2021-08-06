@@ -1,0 +1,114 @@
+class NUmetro{
+      
+  
+    String type,type1,type2;
+  
+    double Discount;
+   
+   double ticket;
+
+      double cost;
+   
+   double discount;
+      
+
+    NUmetro(){
+ 
+         type="Pensioner";
+     
+     type1="Others";
+     
+     type2="Students";
+    
+        
+          ticket=300;
+   
+ }
+    
+    
+   void Type(String Customer){
+     
+        System.out.println("The customer belongs to "+Customer+" category.");
+   
+          if(Customer.equals(type) || Customer.equals(type2))
+ {
+        
+           System.out.println("You are getting 10% off on movies and 20% for movie and popcorn");
+                   
+     
+        discount=ticket/100*10;
+         
+    cost=ticket-discount;
+     
+        System.out.println("You have to pay "+cost);
+     
+        System.out.println("You get 20% off on popcorns");
+    
+         discount=ticket/100*20;
+      
+       cost=ticket-discount;
+     
+        System.out.println("You have to pay "+cost);
+     
+        
+             }
+          
+  else if(Customer.equals(type1)){
+      
+            System.out.println("You have to pay "+ticket);
+   
+               System.out.println("No offers for you");
+    
+        }
+     
+  }
+    
+  
+}
+
+      
+     public class Main{
+      
+           public static void main(String args[])
+{
+      
+                 NUmetro N=new NUmetro();
+  
+                N.Type("Pensioner");
+     
+                  System.out.println("\n");
+       
+                N.Type("Students");
+     
+                  System.out.println("\n");
+      
+                 N.Type("Others");
+   
+                    
+                 }
+   
+        }
+       
+
+       
+/* output
+$javac Main.java
+$java -Xmx128M -Xms16M Main
+The customer belongs to Pensioner category.
+You are getting 10% off on movies and 20% for movie and popcorn
+You have to pay 270.0
+You get 20% off on popcorns
+You have to pay 240.0
+
+
+The customer belongs to Students category.
+You are getting 10% off on movies and 20% for movie and popcorn
+You have to pay 270.0
+You get 20% off on popcorns
+You have to pay 240.0
+
+
+The customer belongs to Others category.
+You have to pay 300.0
+No offers for you
+*/

@@ -1,0 +1,80 @@
+class show
+
+{
+  
+  int s;
+  
+  show(int k)
+   
+ {
+   
+     
+        System.out.println(k);
+    
+}
+
+};
+
+
+public class Shaw
+
+{
+
+    public static void main(String args[])
+ 
+   {
+  
+      show obj=new show(6);
+  
+  }
+
+}
+
+//output-6
+
+
+//second
+class show
+{
+    
+ 
+   show(String K)
+
+    {
+  
+      
+        System.out.println(K);
+  
+  }
+    
+show(int c)
+   
+ {
+  
+      System.out.println(c);
+  
+  }
+
+};
+
+
+public class Shaw
+
+{
+ 
+   public static void main(String args[])
+
+    {
+   
+     show obj=new show("Sakshi");
+  
+      show obj1=new show(6);
+    
+}
+
+};
+
+/*output
+Sakshi
+6
+*/

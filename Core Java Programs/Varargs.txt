@@ -1,0 +1,43 @@
+class paint{
+    
+
+    void varag(int...v)
+
+   {
+   
+   System.out.println(v.length);
+  
+    for(int i:v)
+   
+   System.out.println(i);
+ 
+  }
+  
+ 
+   
+}
+
+
+
+public class Containmain{
+    
+
+    public static void main(String argd[]){
+
+        paint p=new paint();
+  
+    
+        p.varag(3);
+ 
+       paint p1=new paint();
+    
+   
+        p1.varag(23,45,67,34,89,21);
+        
+        
+
+        
+        
+    }
+
+}

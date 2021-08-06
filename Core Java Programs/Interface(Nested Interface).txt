@@ -1,0 +1,72 @@
+package newpack;
+
+
+class superclass
+{
+
+    
+    int j;
+
+    superclass()
+{
+
+        System.out.println("this class contains nested interface");
+
+    }
+ 
+   
+    void hidden()
+{
+
+        System.out.println("This class contains interface"+j++);
+  
+      
+        
+    }
+
+    
+    
+    interface nested{
+
+    public    void display();
+ 
+   }
+
+}
+
+
+class B implements superclass.nested
+{
+
+    
+    public void display()
+{
+  
+      System.out.println("I am from interface, in class B");
+ 
+   }
+
+}
+
+
+
+public class MAIN
+ {
+
+    public static void main(String args[])
+{
+
+    superclass sup=new superclass();
+   
+ sup.hidden();
+    
+
+    B b=new B();
+ 
+   b.display();
+
+}
+
+}
+
+/* Output

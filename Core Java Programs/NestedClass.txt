@@ -1,0 +1,63 @@
+class nest
+{
+   
+ int a=0;
+  
+  int u;
+   
+ char b;
+  
+  String name;
+  
+  
+nest()
+
+{
+ 
+   u=5;
+  
+  b='t';
+ 
+   name="My name is xoxo";
+    
+nected N=new nected();
+ 
+   
+}
+
+  class nected
+{
+    
+  
+      nected()
+{
+   
+       int v;
+   
+       v=a+u;
+     
+     System.out.println(u +" here\n");
+   
+   }
+ 
+ }
+
+}
+
+
+
+public class ours
+{
+   
+ 
+
+ public static void main(String args[])
+{
+    
+       nest O=new nest();
+    
+       
+     
+ }
+
+}

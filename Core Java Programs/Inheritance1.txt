@@ -1,0 +1,49 @@
+class inherit{
+   
+ 
+    int a,b;
+    
+ 
+   inherit(){
+     
+   a=10;
+    
+    b=20;
+   
+ }
+
+}
+
+
+class derive extends inherit{
+
+    
+    int c;
+
+    
+    derive()
+{
+     
+   c=a+b;
+    
+    System.out.println(c);
+   
+ }
+
+}
+
+
+ public class Main
+{
+  
+   
+     public static void main(String []args){
+    
+     
+         derive d=new derive();
+  
+   }
+ 
+}
+
+//output-30

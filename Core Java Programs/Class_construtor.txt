@@ -1,0 +1,93 @@
+class Box
+{
+  
+  int he,len,wi;
+
+    
+    Box(int w,int l, int h)
+
+    {
+   
+     wi=w;
+      
+  len=l;
+     
+   he=h;
+    
+}
+   
+ Box(int l)
+ 
+   {
+  
+      wi=l;
+    
+    he=l;
+  
+      len=l;
+   
+ }
+    
+ Box()
+   
+     {
+       
+     wi=2;
+    
+        len=2;
+  
+          he=2;
+  
+      }
+
+       int vole()
+    
+    {
+           
+int  volume=wi*len*he;
+   
+         return volume;
+
+        }
+
+}
+
+
+public class Beget
+
+{
+
+    public static void main(String []args)
+
+    {
+   
+     Box obj1=new Box(22,30,40);
+   
+     Box obj2= new Box(9);
+    
+    Box obj3=new Box();
+ 
+     int vol;
+       
+ vol=obj1.vole();
+     
+   System.out.println(vol);
+    
+    vol=obj2.vole();
+   
+      System.out.println(vol);
+    
+    vol=obj3.vole();
+   
+      System.out.println(vol);
+
+    }
+
+}
+
+
+
+//output
+26400
+729
+8

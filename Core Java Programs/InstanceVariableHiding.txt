@@ -1,0 +1,43 @@
+ public class MAIN
+
+{
+ 
+   public static void main(String []args)
+ 
+   {
+  
+      Calc obj=new Calc(3,6);
+
+ 
+   }
+
+}
+
+
+
+
+ class Calc
+
+{
+
+    int k;
+ 
+    int j;
+
+    int c;
+
+
+Calc(int k,int j)
+
+{
+  
+  this.k=k;
+   
+  this.j=j;
+  
+  System.out.println(c=k+j);
+
+}
+
+};
+

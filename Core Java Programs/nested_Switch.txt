@@ -1,0 +1,49 @@
+public class addString{
+
+   
+  public static void main(String args[])
+  
+   {
+   
+    int a=1,b=2;
+    
+   switch(a)
+   
+    {
+      
+     case 1: switch(b)
+       
+    {
+        
+                case 1: System.out.println("one one");
+     
+                   break;
+        
+                case 2: System.out.println("one two");
+      
+                  break;
+                        
+               default:System.out.println("invalid");
+      
+                  break;
+          
+ }
+                        
+              
+ System.out.print("one");
+      
+     break;
+          
+ case 2: System.out.print("two");
+     
+      break;
+          
+ default: System.out.println("invalid");
+ 
+          break;
+       
+}
+
+     }
+
+}

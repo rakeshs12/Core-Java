@@ -1,0 +1,26 @@
+public class Stringg
+{
+
+
+     public static void main(String args[])
+  
+   {
+ 
+      //array
+    
+   String str="sakshi";
+  
+    String ptr="sakshi";
+ 
+     if(str!=ptr)
+    
+  {
+    
+   System.out.print("done");
+  
+  }
+    
+ 
+     }
+
+}

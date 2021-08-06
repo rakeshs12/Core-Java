@@ -1,0 +1,53 @@
+class retob
+{
+ 
+   int a;
+  
+  
+    retob(int i)
+
+{
+
+     a=i;
+ 
+    System.out.println(a);
+
+}
+
+
+retob Inc()
+{
+
+    retob R=new retob(12);
+
+    return R;
+ 
+   
+}
+
+
+}
+
+
+
+public class obret
+{
+
+    public static void main(String args[])
+{
+
+        retob B=new retob(19);
+    
+    retob g; 
+ //new object to use object passed by function Inc()
+ 
+      g=B.Inc(); 
+
+      //new object g or new class type variable g stores value returned by the function Inc()
+     
+ g=g.Inc();
+ // another statement , we can call Inc() by g also
+  
+  }
+
+}

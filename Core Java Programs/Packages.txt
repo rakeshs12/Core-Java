@@ -1,0 +1,125 @@
+package mypack;
+
+
+class Samplepkg{
+
+    
+    private String adhar="234567849032";
+   
+ public String name="Johnny";
+  
+  protected int age=20;
+   
+ String education="College";
+   
+ 
+    Samplepkg()
+{
+
+        System.out.println("The Information about Johnny");
+  
+      System.out.println(adhar+ " Aadhar Card Number");
+  
+      System.out.println(age+" is the age");
+    
+    System.out.println("The education is "+education);
+    
+    
+    }
+  
+  
+protected   
+       void Private()
+{
+ 
+       String Add="53,ABC, XYZ";
+      
+  int num[]=new int[11];
+     
+   for(int i=1;i<=10;i++)
+     
+   num[i]=i;
+   
+ }
+
+
+}
+
+
+class Academics extends Samplepkg{
+   
+ 
+    private int Score=97;
+    
+public char grade='A';
+ 
+   protected String schl="ABCdd";
+   
+ private double per;
+
+    int maths, eng, hindi,sst,sci,total;
+
+
+    
+ private void Markseach() {
+
+     maths=100;
+     
+    eng=99;
+     
+    sci=99;
+     
+    sst=99;
+        
+ hindi=99;
+    
+   total=maths+eng+sci+sst+hindi; 
+  
+    // System.out.println(total);
+
+     per=(total*100)/500;
+   }
+
+
+    
+protected    void Display(){
+ 
+   Markseach();
+    
+    System.out.println(name+"'s result for "+education+" is..");
+ 
+       System.out.println("Marks of maths "+maths);
+  
+      System.out.println("Marks of english "+eng);
+   
+     System.out.println("Marks of hindi "+hindi);
+    
+    System.out.println("Marks of sst "+sst);
+ 
+       System.out.println("Marks of science "+sci);
+   
+     System.out.println("Percentage is "+total+"%");
+   
+ }
+    
+
+     
+}
+
+
+
+public class MAIN{
+    
+public static void main(String args[]){
+ 
+       Academics pkg=new Academics();
+    
+    pkg.Private();
+ 
+   //    pkg.Markseach();
+ 
+      pkg.Display();
+  
+  }
+
+}

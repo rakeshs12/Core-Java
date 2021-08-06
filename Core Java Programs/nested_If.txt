@@ -1,0 +1,36 @@
+public class addString{
+
+
+     public static void main(String args[])
+     {
+
+          /* String str="sakshi";
+      String ptr="sakshi";*/
+     
+    int str=25;
+  
+    int ptr=40;
+     
+ if(str!=ptr)
+  
+    {
+
+       System.out.println("not equals");
+     
+    }
+   
+   if(str<=ptr)
+  
+    System.out.println(str+ptr);
+   
+    if(str<ptr)
+   
+    System.out.println(str-ptr);
+  
+   else
+ 
+    System.out.println("done");
+   
+  }
+
+}

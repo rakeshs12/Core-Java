@@ -1,0 +1,71 @@
+public class HelloWorld{
+
+   
+  public static void main(String [ ]args){
+   
+     System.out.println("outer");
+    
+    
+        int a[]=new int[5];
+    
+    
+        try{
+   
+         for(int i=0;i<6;i++)
+  
+          a[i]=i;
+  
+          System.out.println("Inside \"try\" block");
+  
+      }
+     
+   
+        catch(ArrayIndexOutOfBoundsException e) 
+{
+    
+        System.out.println("Exception caught");
+    
+    }
+      
+  
+        
+        int zero=0;
+   
+     
+        try{
+       
+     
+            int c = 9/zero;
+    
+        System.out.println("Second time try block");
+    
+    }
+    
+    
+      /*  System.out.println(); This causes error as catch should always be placed immediately after the try block
+ */
+
+        catch(ArithmeticException e) {
+
+            System.out.println("Arithmetic exception caught");
+  
+      }
+        
+        
+ 
+       
+     }
+
+}
+
+
+/* output
+
+$javac HelloWorld.java
+$java -Xmx128M -Xms16M HelloWorld
+outer
+Exception caught
+Arithmetic exception caught
+
+
+*/

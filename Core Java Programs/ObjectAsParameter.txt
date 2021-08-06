@@ -1,0 +1,75 @@
+class Sample{
+ 
+   int i,j,k;
+   
+ 
+    Sample()
+{
+
+     i=3;
+   
+  j=9;
+ 
+    System.out.println("ek bar me yaha\n");
+
+}
+
+   void add(int a, int b)
+ 
+ {
+    
+  i=a;
+   
+   j=b;
+  
+     k=i+j;
+    
+   System.out.println(k);
+ 
+ }
+  
+
+  void obj(Sample d)
+  
+{
+  
+    System.out.println("successful\n");
+  
+  //  S.a=5;
+ 
+    // S.b=
+  
+}
+
+
+}
+
+
+public class HelloWorld
+{
+
+
+     public static void main(String []args)
+{
+  
+       int a=0,b=6;
+    
+     Sample S=new Sample();
+   
+     S.add(20,30);
+     
+   S.obj(S);
+     
+  // S.obj();
+       
+  Sample N=new Sample();
+     
+    N.add(a,b);
+  
+       N.obj(S);
+        
+ 
+        
+     }
+
+}

@@ -1,0 +1,46 @@
+class StringDemo{
+   
+String str1="Sakshi";
+
+String    str2="Jain";
+ 
+   String  str3="Sakshi";
+ 
+   
+    StringDemo()
+   
+ {
+    
+    //using operations  one by one
+  
+      String strnew;
+  
+      strnew=str1;
+     
+   System.out.println(strnew+str2);
+  
+      System.out.println(str3.equals(strnew));
+   
+     System.out.println(str1.charAt(5));
+ 
+       int y=str1.length();
+    
+    System.out.println(y);
+
+    }
+
+}
+
+
+public class StringsOperation
+{
+    
+public static void main(String args[])
+
+    {
+   
+     StringDemo St=new StringDemo();
+  
+  }
+
+}

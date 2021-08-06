@@ -1,0 +1,175 @@
+//stone paper scissor
+
+
+class tool{
+
+ protected   
+
+    int strength;
+    
+char type;
+   
+ 
+    void setStrength(){
+ 
+       strength=5;
+    }
+
+}
+
+
+
+class rock extends tool
+{
+
+    
+    rock()
+{
+  
+      strength=10;
+    
+    type='r';
+
+    }
+  
+  
+    boolean fight(char tp ){
+
+        
+        if(tp=='s'){
+
+        strength=strength*2;
+
+        System.out.println(strength); 
+}
+   
+     else if(tp=='p'){
+ 
+       strength=strength/2;
+
+System.out.println(strength);
+
+}
+
+        return true;
+  
+  }
+    
+
+    
+}
+
+
+class paper extends tool
+{
+ 
+   
+    paper(){
+  
+      strength=10;
+     
+   type='p';
+  
+  }
+   
+ 
+     boolean fight(char tp )
+{
+     
+   
+        if(tp=='r')
+{
+    
+    strength=strength*2;
+    
+System.out.println(strength); 
+}
+   
+     else if(tp=='s')
+{
+  
+      strength=strength/2;
+  
+      System.out.println(strength);
+  
+      }
+    
+     return true;
+  
+  }
+
+}
+
+
+class scissor extends tool{
+
+    
+    scissor(){
+
+        strength=10;
+    
+    type='s';
+   
+ }
+     
+
+     boolean fight(char tp ){
+   
+     
+        if(tp=='p'){
+
+        strength=strength*2;
+    
+    System.out.println(strength);
+  
+      }
+   
+     else if(tp=='r'){
+ 
+       strength=strength/2;
+  
+      System.out.println(strength);
+  
+      }
+    
+ return true;
+ 
+        
+     }
+
+}
+
+
+ public class Main{
+    
+ 
+     public static void main(String args[])
+{
+
+        char in='r';
+  
+      
+    
+         rock ro=new rock();
+ 
+        ro.fight(in);
+   
+      paper pa=new paper();
+     
+    pa.fight(in);
+    
+     scissor sc=new scissor();
+   
+      sc.fight(in);
+ 
+        
+     }
+
+ }
+
+/*output
+$javac Main.java
+$java -Xmx128M -Xms16M Main
+20
+5
+*/

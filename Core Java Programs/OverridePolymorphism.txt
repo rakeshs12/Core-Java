@@ -1,0 +1,172 @@
+class override{
+  
+  
+public
+    int rno;
+
+    double marks;
+    
+String name;
+   
+ char sec;
+
+
+protected 
+  
+  void getinfo(){
+  
+      rno=24;
+    
+    marks=15;
+     
+   name="Michael";
+  
+      sec='A';
+ 
+   }
+ 
+   
+    void show(){
+     
+   System.out.println(rno);
+    
+    System.out.println(marks);
+   
+     System.out.println(name);
+   
+     System.out.println(sec);
+ 
+   }
+ 
+   
+}
+
+
+class sub{
+    
+
+    public
+   
+ int rno;
+  
+  double marks;
+    
+String name;
+  
+  char sec;
+  
+  
+    sub(){
+  
+     rno=25;
+        
+marks=20;
+   
+     name="Joseph";
+     
+   
+        sec='C';
+ 
+   }
+    
+
+    void show(){
+     
+   System.out.println(rno++);
+   
+       System.out.println(marks);
+  
+      System.out.println(name);
+   
+     System.out.println(sec);
+
+    }
+
+}
+
+
+
+class subsub 
+{
+  
+  public
+  
+  int rno;
+   
+ double marks;
+   
+ String name;
+ 
+   char sec;
+  
+  
+    subsub(){
+  
+      rno=27;
+   
+     marks=24;
+     
+   name="Cooney";
+   
+     sec='A';
+  
+      
+    }
+  
+  void show(){
+  
+      System.out.println(rno++);
+  
+        System.out.println(marks++);
+  
+      System.out.println(name);
+  
+      System.out.println(sec);
+ 
+   }
+
+}
+
+
+public class Main{
+  
+  
+public static void main(String args[])
+{
+  
+    override S=new override();
+ 
+     S.getinfo();
+
+      S.show();
+    
+  
+      sub sub=new sub();
+    
+  sub.show();
+   
+   
+      subsub sb=new subsub();
+     
+ sb.show();
+    
+
+      
+  }
+
+}
+
+/*
+24
+15.0
+Michael
+A
+25
+20.0
+Joseph
+C
+27
+24.0
+Cooney
+A
+*/

@@ -1,0 +1,73 @@
+package newpack;
+
+
+class ForNoReason
+{
+   
+ 
+    int a=50;
+   
+ ForNoReason()
+{
+
+    System.out.println("here for no reason");
+
+}
+
+
+}
+
+
+interface A{
+   
+ 
+    int g=22;
+  
+  String name="ABC";
+   
+ 
+    void info();
+
+    void xyz();
+
+}
+
+
+
+abstract class A_inside implements A{
+ 
+   
+    void infoCOPY(){
+   
+ System.out.println("I will not display interface's message, i am not interface method, i am infoCOPY.");
+    
+ 
+   
+System.out.println("So I am abstract class");
+
+}
+
+}
+
+
+
+public class MAINCLASS{
+  
+  public static void main(String args[])
+{
+  
+      ForNoReason obj1=new ForNoReason();
+  
+    //  A_inside obj2=new A_inside();
+  
+  //    obj2.infoCOPY();
+   
+ }
+
+}
+
+/* output
+$javac newpack/MAINCLASS.java
+$java -Xmx128M -Xms16M newpack/MAINCLASS
+here for no reason
+*/

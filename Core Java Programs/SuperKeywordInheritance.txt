@@ -1,0 +1,54 @@
+//super keyword
+
+class
+ superclass{
+
+    
+    int a;
+ 
+   superclass(int b, int c, String n)
+{
+
+        a=b+c;
+    
+    System.out.println(a+" "+n);
+
+    }
+}
+
+
+class Subclass extends superclass{
+  
+  
+    int i,j;
+
+    String name;
+    
+
+    Subclass(int i, int j, String name){
+     
+   super(i,j,name);
+    
+  
+       
+    }
+
+}
+
+
+public class SuperSub{
+ 
+   public static void main(String arg[]){
+ 
+       int i=5;
+    
+   int j=10;
+  
+    String  name="Andrew";
+   
+     Subclass S=new Subclass(i,j,name);
+      
+  
+    }
+
+}

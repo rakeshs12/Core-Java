@@ -1,0 +1,27 @@
+public class addString{
+
+   
+  public static void main(String args[])
+  
+   {
+   
+    int i=1,a=5,x=0;
+    
+   //fabonic series up to 5
+     
+  while(i<=5)
+    
+   {
+        
+   x=x+i;
+     
+      i++;
+           
+  
+     }
+    
+   System.out.println(x);
+    
+ }
+
+}

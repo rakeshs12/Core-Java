@@ -1,0 +1,22 @@
+public class HelloWorld{
+
+ 
+    public static void main(String args[])
+
+     {
+
+         //type cast
+   char to int output is 65
+       char a='A';
+    
+     int b;
+       
+     b=(int)a;
+      
+   System.out.println(b);
+       
+   
+     
+     }
+
+}

@@ -1,0 +1,107 @@
+class paint{
+  
+  
+    int colorcode;
+  
+  String colour;
+  
+  int[] a=new int[5];   // price
+ 
+   int rooms;
+  
+  int area;
+
+paint()
+{
+    
+
+    for(int i=0;i<a.length;i++)
+ 
+   a[0]=5000;
+ 
+   a[1]=5000;
+    
+   a[2]=6000;
+   
+   a[3]=7000;
+
+   a[4]=10000;
+    
+}   
+
+
+
+   int customer(String colorname, int code){
+   
+    colour=colorname;
+  
+     System.out.println("Your selected colour is "+colour);
+  
+    
+       colorcode=code;
+   
+     System.out.println("The colour code is "+colorcode);
+   
+    return 0;
+   
+    
+   }
+ 
+  
+   void countprice(int rooms)
+{
+   
+    for(int i=0;i<a.length;i++) {
+
+      // System.out.println(colorcode);
+ 
+      if(colorcode==i){
+    
+  
+          // System.out.println("Here");
+  
+     System.out.println("Price of having pink colour is "+a[i]);
+   
+    this.rooms=rooms;
+    
+   int Cost=rooms*a[i];
+  
+     System.out.println("You have to pay "+Cost);
+  
+     }
+   
+    }
+   
+}
+  
+  
+}
+
+
+
+public class Containmain
+ {
+
+    
+    public static void main(String argd[]) 
+{
+  
+      paint p=new paint();
+  
+      p.customer("Pink",3);
+ 
+       p.countprice(20);
+ 
+   }
+
+}
+
+
+/*output
+$javac Containmain.java
+$java -Xmx128M -Xms16M Containmain
+Your selected colour is Pink
+The colour code is 3
+Price of having pink colour is 7000
+You have to pay 140000
+*/

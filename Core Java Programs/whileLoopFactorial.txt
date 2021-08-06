@@ -1,0 +1,30 @@
+public class addString{
+
+
+     public static void main(String args[])
+    
+ {
+    
+   int i=1,a=5,x=1;
+    
+   //factorial
+  
+     while(i<=5)
+    
+   {
+  
+         x=x*i;
+            //o/p 120
+          i++;
+      
+     
+       }
+ 
+      System.out.println(x);
+     
+}
+
+
+}   
+
+

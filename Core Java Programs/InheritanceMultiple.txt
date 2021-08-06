@@ -1,0 +1,73 @@
+class Input{
+    
+ 
+   int a,b;
+
+    Input(){
+   
+     a=10;
+    
+    b=20;
+      
+  System.out.println("THE values are "+a+" "+b+".");
+  
+  }
+
+}
+
+
+ class ADD extends Input{
+
+     
+     int c;
+
+     
+     int plus(){
+
+         c=a+b;
+     
+
+         return c;
+
+     }
+     
+
+ 
+ }
+ 
+
+
+
+
+class showw extends ADD{
+     
+int k;
+ 
+
+ void showw1(){
+    
+ System.out.println(c);
+
+ }
+     
+
+ }
+ 
+ 
+ 
+
+public class Maincall{
+  
+   
+     public static void main(String args[]){
+   
+ 
+    showw s= new showw();
+   
+      s.plus();
+    
+     s.showw1();
+     
+}
+
+ }

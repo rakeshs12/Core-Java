@@ -1,0 +1,79 @@
+class  outer{
+  
+     int out=100;
+ 
+     String str="CalculatingIts234Lenght";
+
+     String str2="CheckingforEquality";
+
+     String str3="CalculatingItsLenght";
+    
+
+     void test()
+
+   {
+      
+       for(int i=0;i<5;i++)
+   
+     {
+     
+       class Inner
+          {
+    
+            void display()
+   
+              {
+    
+                if(out==100)
+       
+                   {
+  // System.out.println("first time"+out);
+     
+               str.length();
+    
+               System.out.println(str.length());
+    
+               if(str.equals(str2))
+   
+               System.out.println("YASS");
+     
+               else if(str.equals(str3));
+      
+               System.out.println("OH YASS");
+     
+               System.out.println(str.charAt(17));
+      
+               System.out.println(str.charAt(12));
+      
+              
+                }
+   
+           }
+     
+       }
+       
+     Inner inner=new Inner();
+    
+     inner.display();
+   
+     }
+   
+ }
+
+}
+
+
+public class InnerDemo
+{
+  
+  public static void main(String args[])
+   
+  {
+      
+  outer o=new outer();
+   
+     o.test();
+ 
+   }
+
+}

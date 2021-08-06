@@ -1,0 +1,25 @@
+public class Simple{
+public static void main(String args[]){
+Outer o=new Outer();
+o.Out();
+}}
+
+class Outer{
+int a;
+int Out()
+{
+a=10;
+return a;
+}
+Outer()
+{
+Inner I=new Inner();
+}
+ class Inner{
+int b;
+Inner(){
+System.out.println("See, I am using Outer class's varible in Inner class");
+System.out.println(a);
+}
+}
+}

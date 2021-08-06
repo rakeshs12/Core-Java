@@ -1,0 +1,120 @@
+class Input{
+    
+  
+  int a,b;
+   
+ Input(){
+     
+   a=10;
+    
+    b=20;
+    
+    System.out.println("THE values are "+a+" "+b+".");
+  
+  }
+
+}
+
+
+ class ADD extends Input{
+    
+ 
+     int c;
+   
+  
+     int plus(){
+     
+    c=a+b;
+     
+
+         return c;
+    
+ }
+   
+  
+  /*   void show()
+     {
+         System.out.println(c);
+     }         */
+ }
+
+ 
+ class Subtract extends Input{
+     
+
+     int d;
+    
+ 
+     int minus(){
+       
+  d=a-b;
+    
+     return d;
+     
+}
+    
+ 
+     void display(){
+   
+       System.out.println("Subtraction "+d);
+    
+  } 
+    
+ 
+}  
+
+ 
+ class showw extends ADD{
+     
+int k;
+ 
+
+ void showw1(){
+    
+ System.out.println("Sum is "+c);
+
+ }
+    
+ 
+ }
+ 
+
+ 
+ public class Maincall{
+    
+ 
+     public static void main(String args[])
+{
+     
+ /*   ADD P=new ADD();
+         P.plus();*/
+    
+     Subtract m=new Subtract();
+   
+      m.minus();
+    
+     m.display();
+    
+     showw s= new showw();
+      
+   s.plus();
+ 
+        //s.show();
+     
+    s.showw1();
+   
+  }
+ 
+}
+
+
+/*
+
+output:
+$javac Maincall.java
+$java -Xmx128M -Xms16M Maincall
+THE values are 10 20.
+Subtraction -10
+THE values are 10 20.
+Sum is 30
+*/

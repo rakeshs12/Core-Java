@@ -1,0 +1,59 @@
+package mypack;
+
+
+interface A{
+
+    int k=25;
+
+    void callback(int p);
+
+}
+
+
+class B implements A{
+
+    
+ public   void callback(int t)
+{
+
+        System.out.println(t+k);
+
+    }
+ 
+   
+    void B_function(){
+
+     int a=34;
+
+     System.out.println("method implementing interface can have its in functions also.");
+
+     System.out.println("Value of \"a\" "+a);
+
+    }
+
+}
+
+
+public class MAIN{
+  
+  public static void main(String args[])
+{
+   
+     B obj=new B();
+ 
+       obj.callback(5);
+
+        obj.B_function();
+
+    }
+
+} 
+
+
+/* output
+$javac mypack/MAIN.java
+$java -Xmx128M -Xms16M mypack/MAIN
+30
+method implementing interface can have its iwn functions also.
+Value of "a" 34
+*/

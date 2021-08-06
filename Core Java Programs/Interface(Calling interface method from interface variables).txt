@@ -1,0 +1,48 @@
+package newpack;
+
+
+interface first
+{
+
+    
+    void callback();
+
+}
+
+
+class second implements first
+{
+
+   //method that implement interface must be public 
+  
+public  void callback()
+{
+
+        System.out.println("Calling interface method via an interface reference varible");
+ 
+   }
+
+}
+
+
+public class MAINCLASS
+{
+
+    public static void main(String args[])
+{
+
+        first se=new second();
+  
+  // <interface-name> <referance-varible>= new <class-name>
+
+    se.callback();
+
+    }
+
+}
+
+/* output
+$javac newpack/MAINCLASS.java
+$java -Xmx128M -Xms16M newpack/MAINCLASS
+Calling interface method via an interface reference varible
+*/

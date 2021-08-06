@@ -1,0 +1,126 @@
+package mypack;
+
+
+class first{
+	
+
+	int i=20;
+
+	private int j=23;
+
+	protected int  k=25;
+
+	public int b=67;
+
+	
+	private 
+	void Look()
+{
+     System.out.println(i);
+
+	}
+	
+	
+public
+	
+void Look1(){
+		
+System.out.println(b);
+
+		
+	}
+	
+
+	protected 
+	
+void Lookpr(){
+
+		System.out.println(k);
+
+	}
+	
+	
+first(){
+
+		System.out.println(i);
+
+	}
+
+}
+
+
+
+ class Second{
+ 
+	public int a=23;
+ 
+	protected int y=99;
+
+ 	int h=344;
+ 
+	private int f=87;
+
+ 	
+ 	public 
+ 	void See(){
+
+ 		System.out.println(a);
+ 
+	} 
+ 	
+
+ 	protected 
+ 	void SEE(){
+
+ 		System.out.println(y);
+ 	
+	 	}
+ 
+	void forms(){
+
+ 	    ++f;
+ 	
+	System.out.println(f);
+
+ 		f++;
+ 	
+}
+
+ private void ref(){
+
+ System.out.println(f);
+ 
+	}
+ 	
+
+ }
+
+ 
+ 
+ public class MAINCLASS{
+ 	
+
+ 	public static void main(String args[]){
+ 
+	first fe=new first();
+
+ 	fe.Lookpr();
+
+ 	fe.Look1();
+ 
+//	fe.Look();
+
+ 	Second se=new Second();
+ 	
+se.See();
+
+ 	se.SEE();
+ 	
+se.forms();
+
+ //	se.ref();
+
+}
+
+ 	
+ }

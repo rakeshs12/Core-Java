@@ -1,0 +1,40 @@
+ public class MAIN
+
+{
+
+    public static void main(String []args)
+   
+ {
+   
+     Calc obj=new Calc();
+ 
+//       obj.Add();
+
+  }
+
+}
+
+
+
+
+ class Calc
+
+{
+ 
+   int a=10;
+ 
+   int b=20;
+    
+   int c;
+
+
+Calc()
+
+{
+
+    System.out.println(c=a+b);
+
+}
+
+};
+

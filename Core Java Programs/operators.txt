@@ -1,0 +1,63 @@
+public class HelloWorld{
+
+  
+   public static void main(String args[])
+
+     {
+
+        int a=2;
+   
+     int b=5;
+   
+     int c=10;
+  
+      System.out.println(a+b);
+ 
+       System.out.println(a-b);
+   
+     System.out.println(a*b);
+   
+     System.out.println(a/b);
+  
+      System.out.println(a%b);
+   
+     System.out.println("Arithmetic operators");
+ 
+       System.out.println("Relational operators");
+        
+   
+      
+        System.out.println(a>b);
+      
+  System.out.println(a<b);
+   
+     System.out.println(a==b);
+     
+   System.out.println(a!=b);
+        
+
+        System.out.println("Bitwise operator");
+         
+  a=0;
+  
+        b=0;
+ 
+       System.out.println(a&b);
+   
+     System.out.println(a|b);
+   
+     System.out.println(a^b);
+  
+     System.out.println(~a);
+  
+   //   System.out.println(a|b);
+   
+  System.out.println("increment decrement operators");
+   
+  System.out.println(c++);
+         
+         
+
+     }
+
+}

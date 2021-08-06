@@ -1,0 +1,46 @@
+package mypack;
+
+
+interface A{
+  
+  int k=25;
+
+    void callback(int p);
+
+}
+
+
+
+
+class B implements A{
+
+    
+ public   void callback(int t)
+{
+  
+      System.out.println(t+k);
+
+    }
+
+}
+
+
+public class MAIN
+{
+
+    public static void main(String args[])
+{
+
+        B obj=new B();
+
+        obj.callback(5);
+    
+}
+
+}
+
+/*output
+$javac mypack/MAIN.java
+$java -Xmx128M -Xms16M mypack/MAIN
+30 
+*/ 

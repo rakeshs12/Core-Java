@@ -1,0 +1,133 @@
+package newpack;
+
+
+class superclass
+{
+
+    
+    int j;
+
+    superclass()
+{
+
+        System.out.println("this class contains nested interface");
+
+    }
+ 
+   
+    void hidden()
+{
+
+        System.out.println("This class contains interface"+j++);
+  
+      
+        
+    }
+
+    
+    
+    interface nested{
+
+    public    void display();
+ 
+   }
+
+}
+
+
+class B implements superclass.nested
+{
+
+    
+    public void display()
+{
+  
+      System.out.println("I am from interface, in class B");
+ 
+   }
+
+}
+
+
+
+
+interface fone{
+  
+  void call();
+
+}
+
+
+
+interface ftwo extends fone
+{
+
+    void message();
+
+}
+
+
+
+
+class bothADD implements ftwo  
+{
+
+    
+    public void call()
+{
+
+        System.out.println("From fone");
+
+    }
+    
+   
+ public void message()
+{
+
+        System.out.println("From ftwo");
+  
+  }
+
+}
+
+
+
+public class MAIN
+ {
+
+    public static void main(String args[]) 
+{
+  
+  superclass sup=new superclass();
+
+    sup.hidden();
+  
+  
+    B b=new B();
+ 
+   b.display();
+ 
+   
+    bothADD bd=new bothADD();
+ 
+   bd.call();
+
+    bd.message();
+
+}
+
+}
+
+
+
+
+
+/* Output
+$javac newpack/MAIN.java
+$java -Xmx128M -Xms16M newpack/MAIN
+this class contains nested interface
+This class contains interface0
+I am from interface, in class B
+From fone
+From ftwo
+*/

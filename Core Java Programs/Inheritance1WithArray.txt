@@ -1,0 +1,81 @@
+//OUTPUT FOUND
+
+class lessons{
+    
+  
+  protected 
+     int chapter[]=new int[5];
+     
+                      int i;
+
+              
+        lessons(){
+  
+          
+            for(i=0;i<5;i++)
+     
+           chapter[i]=i;
+  
+          
+        }
+
+}
+
+
+ class book extends lessons
+{
+     
+
+     protected
+          int count;
+    
+                             int num;
+        
+  
+          book(){
+  
+            count=-1;
+  
+        }
+      
+    
+          int check(){
+   
+          num=3;
+    
+        for(i=0;i<5;i++){
+   
+             if(chapter[i]==num){
+     
+       System.out.println("FOund");
+    
+        count++;
+      
+          }
+     
+            }
+
+return count;
+    
+      }
+     
+       
+           // System.out.println(count);  
+ 
+         
+          
+ };
+ 
+
+  public class Main{
+ 
+      
+       public static void main(String args[]){
+   
+        book b=new book();
+   
+        b.check();
+    
+   }
+   
+};
