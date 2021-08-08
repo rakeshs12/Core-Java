@@ -2,7 +2,7 @@ class Ofc{
          
      String empName;
     
-          float nh,perHr;
+      nh,perHr;
     
           int n;
       
